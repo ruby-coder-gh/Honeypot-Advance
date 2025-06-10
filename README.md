@@ -5,7 +5,6 @@ A modular, graphic-based honeypot to capture IP Adresses, usernames, passwords, 
 # Install
 
 **1) Clone repository.**
-`git clone https://github.com/collinsmc23/ssh_honeypy.git`
 
 **2) Permissions.**
 Move into `ssh_honeypy` folder.
@@ -42,8 +41,7 @@ Example: `python3 honeypy.py -a 0.0.0.0 -p 22 --ssh`
 
 💡 If HONEPY is set up to listen on a privileged port (22), the program must be run with `sudo` or root privileges. No other services should be using the specified port. 
 
-If port 22 is being used as the listener, the default SSH port must be changed. Refer to Hostinger's "[How to Change the SSH Port](https://www.hostinger.com/tutorials/how-to-change-ssh-port-vps)" guide.
-
+If port 22 is being used as the listener, the default SSH port must be changed. 
 ❗ To run with `sudo`, the `root` account must have access to all Python libraries used in this project (libraries defined in `requirements.txt`). Install by switching to the root account, then supply:
 
 `root@my_host# pip install -r requirements`
